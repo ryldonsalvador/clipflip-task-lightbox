@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lightbox Modal</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Banner Container (300x250) -->
+    <div class="banner">
+      <div class="logo">
+        <img src="./img/clipflip-logo.svg" />
+      </div>
+      <div class="video-player-holder">
+        <video
+          muted
+          loop
+          playsinline
+          autoplay
+          src="./videos/banner-video.webm"
+        ></video>
+      </div>
+      <!-- <button id="openModal">Open Lightbox</button> -->
+      <div id="openModal" class="button">Explore</div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightboxModal" class="modal">
+      <span class="close">&times;</span>
+      <div class="modal-content">
+        <iframe id="modalIframe" src="" frameborder="0"></iframe>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
